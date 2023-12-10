@@ -1,0 +1,9 @@
+/* 6 - multiplos CSS */
+ul{
+    border: 1px solid black;
+    padding:10px;
+}
+
+li{
+    color: blue;
+}

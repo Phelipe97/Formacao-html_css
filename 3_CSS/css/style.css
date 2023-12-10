@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Ordem de uso de coloração: Hex>RGB>HSL>Nomes de cor tipo black and white*/
+
+
+/* 4 - External css  */
+body {
+    padding-bottom: 200px;
+}
+
+h3 {
+    color: green;
+}
+
+/* classes */
+.paragraph {
+    background-color: rgb(104, 152, 194);
+    color: rgb(153, 67, 5);
+    text-align: center;
+    padding: 5px;
+}
+
+/* id */
+#titulo {
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ordem das regras */
+/* id > class > tag */
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid purple;
+}
+
+/* nome de cores */
+.color-name {
+    color: crimson;
+}
+
+/* Hex */
+.hex {
+    color: #55a388;
+}
+
+.hex-2 {
+    color: #b786e5;
+}
+
+/* aprofundando hex */
+.ap-hex {
+    color: #333;
+}
+
+.ap-hex-2 {
+    color: #af8;
+}
+
+/* RGB */
+.rgb {
+    color: rgb(155, 255, 255);
+}
+
+.rgb-2 {
+    color: rgb(0, 255, 0);
+}
+
+.rgba {
+    color: rgba(0, 0, 0, 0.377);
+}
+
+/* HSL */
+.hsl {
+    color: hsl(29, 100%, 63%);
+}
+
+.hsl-2 {
+    color: hsl(202, 80%, 54%);
+}
+
+/* background-color */
+.bg {
+    background-color: #000;
+    color: yellow;
+    padding: 10px;
+}
+
+.bg-2 {
+    background-color: rgb(153, 20, 20);
+    color: rgb(194, 219, 255);
+}
+
+/* opacity */
+.op-bg {
+    background-color: red;
+    opacity: 0.3;
+}
+
+.op-bg-2 {
+    background-color: blue;
+    opacity: 0.8;
+}
+
+/* opacidade com rgba */
+.rgba-op {
+    background-color: rgba(13, 104, 184, 0.062);
+}
+
+/* imagem de fundo */
+.bg-image {
+    background-image: url("../css/img/nature.jpg");
+    padding: 10px;
+    color: #fff;
+}
+
+/* centralizando bg */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../css/img/bridge.jpg");
+}
+
+.centered-bg {
+    background-position: center center;
+    background-size: cover;
+}
+
+/* largura x altura */
+.height-width {
+    height: 300px;
+    width: 100px;
+    background-color: green;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: #333;
+}
+
+/* padding */
+.sem-padding,
+.padding {
+    background-color: #111;
+    color: white;
+}
+
+.padding {
+    background-color: #999;
+    padding: 10px;
+}
+
+/* padding individual */
+.padding-individual {
+    background-color: #222;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+/* shorthand padding */
+.padding-short {
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.padding-short-2 {
+    background-color: #7a7a7a;
+    padding: 10px 20px;
+    /* padding:10px 20px 10px 20px */
+}
+
+/* padding com width */
+.without-border-box {
+    background-color: #202a85;
+    color: white;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box {
+    background-color: #4452ce;
+    color: white;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* borda */
+.border {
+    border: 5px solid rgb(201, 37, 37);
+    padding: 10px;
+}
+
+.border-2 {
+    border: 2px dotted rgb(201, 37, 37);
+    padding: 20px;
+}
+
+/* bordas individuais */
+.border-left {
+    border-left: 2px solid rgb(201, 37, 37);
+    background-color: #6873d6;
+    padding: 10px;
+}
+
+.border-bottom {
+    border-bottom: 2px dotted rgb(174, 37, 201);
+    background-color: #68d6ba;
+    padding: 20px;
+}
+
+/* borda arredondada */
+.rouded-p {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.rouded-p-2 {
+    background-color: #999;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* margin */
+.margin {
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.margin-top {
+    background-color: lightcoral;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.margin-shorthand {
+    background-color: rgb(78, 172, 172);
+    padding: 10px;
+    margin: 20px 30px 10px 40px;
+}
+
+/* box model */
+.box-model {
+    background-color: cyan;
+    margin: 20px;
+    padding: 15px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+/* Desafio 3 */
+#desafio-3 {
+    outline: 3px solid #28ca13;
+    background-color: #4575fa;
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid rgb(190, 12, 12);
+    width: 300px;
+    height: 100px;
+}
+
+.titulo-desafio {
+    margin: 10px;
+    padding: 10px 5px;
+    border: none;
+    background-color: #44a3b4;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+/* text align */
+.text-aligned {
+    text-align: center;
+}
+
+.right-aligned {
+    text-align: right;
+    width: 300px;
+    border: 1px solid blue;
+}
+
+/* text decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: blue;
+}
+
+/* text transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.space {
+    letter-spacing: 5px;
+}
+
+/* fonte */
+.serif {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cursive {
+    font-family: 'MedievalSharp'
+}
+
+/* text style */
+.italic {
+    font-style: italic;
+}
+
+.obliquo {
+    font-style: oblique;
+}
+
+/* font weigth */
+.thin,
+.bold,
+.bolder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* font size */
+.small {
+    font-size: 6px;
+}
+
+.big {
+    font-size: 78px;
+}
+
+/* display */
+.inline-block {
+    width: 50px;
+    height: 50px;
+    background-color: #9cc260;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    color: white;
+    background-color: #333;
+    display: block;
+    margin: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* static */
+.static {
+    position: static;
+    background-color: #28ca13;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+/* relative */
+.relative {
+    position: relative;
+    background-color: #172914;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* absolute */
+.absolute {
+    position: absolute;
+    background-color: #28661d;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Relative com absolute */
+.relative-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 100px;
+}
+
+.absolute-1,.absolute-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #a51616;
+}
+.absolute-1{
+    top: 50px;
+    left: 50px;
+}
+.absolute-2{
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Fixed */
+.fixed{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #202a85;
+    border: 1px solid red;
+    top: 100px;
+    right: 10px;
+}
+/* Sticky */
+.sticky{
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    background-color: #7ad6d2;
+    border: 1px solid #7bf00e;
+    top: 10px;
+}
+/* z- index */
+.absolute-3,.absolute-4,.absolute-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #deee95;
+}
+.absolute-3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.absolute-4{
+    top: 10px;
+    left:10px;
+    background-color: #333;
+    z-index: 2;
+}
+.absolute-5{
+    top: 20px;
+    left: 20px;
+    background-color: #4ab8c0;
+    z-index: 1;
+}
