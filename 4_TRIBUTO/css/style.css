@@ -1,1 +1,87 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f9aeb; 
+}
 /* header */
+.header {
+    text-align: center;
+}
+/* Estilizações especificas */
+figcaption {
+    font-weight: bold;
+    color: rgb(101, 101, 224);
+}
+
+h1 {
+    font-size: 40px;
+    color: purple;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+h3{
+    font-size: 25px;
+    text-decoration: underline;
+}
+p{
+    font-size: 18px;
+}
+/* Containers */
+.text-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.container {
+    max-width: 1000px;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+.power-container{
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+/* Quotes */
+.quote-container{
+    background-color: #a0a0a0;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+.quote-container blockquote{
+    font-weight: bold;
+    font-size: 25px;
+}
+.quote-container p{
+    font-style: italic;
+}
+/* Imagem */
+.image {
+    text-align: center;
+}
+li{
+    min-width: 300px;
+    margin: 10px 0 ;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: #0f9aeb;
+}
+a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(240, 94, 75);
+}
