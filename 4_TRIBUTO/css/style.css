@@ -3,7 +3,7 @@ html {
     background-color: #0f9aeb; 
 }
 /* header */
-.header {
+header {
     text-align: center;
 }
 /* Estilizações especificas */
@@ -38,7 +38,7 @@ p{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.container {
+main {
     max-width: 1000px;
     background-color: #fff;
     position: relative;
