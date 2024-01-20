@@ -1,0 +1,56 @@
+/* 
+
+Breakpoints
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+ */
+/* 2 - media query */
+
+h1{
+    color: red;
+}
+@media screen and (max-width:500px){
+    h1{
+        color: blue;
+    }
+}
+
+/* 3 - min-width */
+
+p{
+    background-color: green;
+    color: white;
+}
+@media screen and (min-width:800px){
+    p{  
+        background-color: blueviolet;
+        color: black;
+    }
+}
+
+/* 4- landscape */
+
+h3{
+    display: none;
+}
+
+@media screen and (orientation:landscape) {
+    h3{
+        display: block;
+    }
+}
+/* 5 - portrait */
+
+h4{
+    display: none;
+}
+@media screen and (orientation:portrait) {
+    h4{
+        display: block;
+    }
+}
