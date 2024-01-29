@@ -1,0 +1,266 @@
+/* Geral */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --titulos:#333;
+    --paragrafos:#70747a;
+}
+h1,h2,h3{
+    color: var(--titulos);
+}
+p{
+    color: var(--paragrafos);
+}
+/* Navbar */
+header{  
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+nav{
+    position: relative;
+}
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+.navbar-items{
+    position: absolute;
+    right:0px;
+    height: 80px;
+    line-height: 80px;
+    margin: inline;
+    display: inline-block;
+}
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+    
+}
+.navbar-items a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar-items a:hover{
+    color: #ccc;
+    text-decoration: underline;
+    pointer-events: auto;
+}
+.defaut-btn{
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 10px;
+}
+.navbar-items .defaut-btn:hover{
+    background-color:#a7a7a7;
+    color: white;
+}
+/* main banner */
+.main-banner{
+    background-image: url(../img/mainbanner.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 10rem 0;   
+}
+.main-banner h1,
+.main-banner p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px black;
+}
+.main-banner h1{
+    font-size: 54px;
+}
+.main-banner p{
+    font-size: 32px;
+}
+/* services */
+.services{
+    padding: 5em 0;
+}
+.services ul{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+}
+.services li{
+    flex:1 1 200px;
+    text-align: center;
+    padding: 20px;
+}
+.fa-solid{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.fa-shield{
+    color: #2bce2b;
+}
+.fa-rocket{
+    color:#d81919;
+}
+.fa-comments{
+    color:#ffd037 ;
+}
+.services h3{
+    margin-bottom: 25px;
+}
+.services p{
+    line-height: 24px;
+}
+/* pricws and plans */
+.pricing{
+    padding-bottom:5rem ;
+    text-align: center;
+}
+.pricing h2{
+    font-size: 36px;
+}
+.pricing p{
+    font-size: 20px;
+}
+.planning{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+    
+}
+.plan{
+    flex: 1;
+    max-width: 275px;
+    margin:0 20px;
+}
+.plan ul{
+    list-style-type: none;
+    padding: 0;
+}
+.plan li {
+    height: 50px;
+    line-height: 50px;
+    background-color: #a8e9ea;
+    color: var(--titulos);
+}
+.plan .price{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2ca757;
+    color: white;
+    text-align: center;
+    line-height:120px ;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+.plan .plan-name{
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+   background-color: #202b34;
+   padding: 50px 0;
+}
+.plan .plan-btn{
+    background-color: #1f9c51;
+    color: white;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+.plan .recomended{
+    background-color: #f04848;
+}
+/* seach domain */
+.searchDomain{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+}
+.searchDomain h2{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.searchDomain p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.searchDomain input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.searchDomain input[type='text']{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.searchDomain input[type='submit']{
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: .9;
+}
+.searchDomain input[type='submit']:hover{
+    opacity: 1;
+}
+/* contact */
+.contact{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+.contact h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.contact p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.contact input,
+.contact textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 1px 20px;
+}
+.contact textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+.contact input[type='submit']{
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: white;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: #333;
+    padding: 20px 0 50px;
+    font-weight: bold;
+}
+footer p{
+    color: white;
+}
