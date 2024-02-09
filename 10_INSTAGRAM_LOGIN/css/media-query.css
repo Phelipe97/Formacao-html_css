@@ -1,0 +1,29 @@
+ @media screen and (max-width:868px) {
+    body{
+        background-color: white;
+    }
+    #banner-container{
+        display: none;
+    }
+    #main-container,
+    #form-box{
+        margin-top:50px;
+    }
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        border: none;
+        width: 100%;
+    }
+    footer{
+        width: 90%;
+    }
+    #footer-links{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    #footer-links{
+        margin-bottom: 10px;
+    }
+}  
